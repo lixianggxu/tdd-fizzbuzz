@@ -29,4 +29,9 @@ public class CountOffTest {
     public void should_say_FizzWhizz_for_multiple_of_3_and_7(){
         assertThat("FizzWhizz").isEqualTo(new CountOff().checkCountOff(21));
     }
+
+    @Test
+    public void should_say_FizzWhizz_for_multiple_of_5_and_7(){
+        assertThat("BuzzWhizz").isEqualTo(new CountOff().checkCountOff(35));
+    }
 }
