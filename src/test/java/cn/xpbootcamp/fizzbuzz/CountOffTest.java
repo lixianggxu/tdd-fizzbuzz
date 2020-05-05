@@ -15,5 +15,10 @@ public class CountOffTest {
         assertThat("Buzz").isEqualTo(new CountOff().checkCountOff(5));
     }
 
+    @Test
+    public void should_say_nothing_for_multiple_of_7(){
+        assertThat("Whizz").isEqualTo(new CountOff().checkCountOff(7));
+    }
+
 
 }
