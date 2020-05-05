@@ -4,7 +4,9 @@ public class CountOff {
 
    public String checkCountOff(int number){
        String resultStr="";
-       if(number%3==0&&number%5==0){
+       if(number%3==0&&number%5==0&&number%7==0){
+           resultStr="FizzBuzzWhizz";
+       }else if(number%3==0&&number%5==0){
            resultStr="FizzBuzz";
        }else if(number%3==0&&number%7==0){
            resultStr="FizzWhizz";
