@@ -7,6 +7,8 @@ public class CountOffTest {
 
     @Test
   public void should_say_nothing_for_multiple_of_3(){
-
+        assertThat("Fizz").isEqualTo(new CountOff().checkCountOff(3));
     }
+
+
 }
