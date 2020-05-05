@@ -6,22 +6,22 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class CountOffTest {
 
     @Test
-    public void should_say_nothing_for_multiple_of_3(){
+    public void should_say_Fizz_for_multiple_of_3(){
         assertThat("Fizz").isEqualTo(new CountOff().checkCountOff(3));
     }
 
     @Test
-    public void should_say_nothing_for_multiple_of_5(){
+    public void should_say_Buzz_for_multiple_of_5(){
         assertThat("Buzz").isEqualTo(new CountOff().checkCountOff(5));
     }
 
     @Test
-    public void should_say_nothing_for_multiple_of_7(){
+    public void should_say_Whizz_for_multiple_of_7(){
         assertThat("Whizz").isEqualTo(new CountOff().checkCountOff(7));
     }
 
     @Test
-    public void should_say_nothing_for_multiple_of_3_and_5(){
+    public void should_say_FizzBuzz_for_multiple_of_3_and_5(){
         assertThat("FizzBuzz").isEqualTo(new CountOff().checkCountOff(15));
     }
 }
