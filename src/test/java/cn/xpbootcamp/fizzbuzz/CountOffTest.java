@@ -39,4 +39,10 @@ public class CountOffTest {
     public void should_say_FizzBuzzWhizz_for_multiple_of_3_and_5_and_7(){
         assertThat("FizzBuzzWhizz").isEqualTo(new CountOff().checkCountOff(105));
     }
+
+    @Test
+    public void should_say_ExptionNumber_for_multiple_larger_than_StudentSize_Or_Smaller_than_1(){
+        assertThat("ExptionNumber").isEqualTo(new CountOff().checkCountOff(0));
+        assertThat("ExptionNumber").isEqualTo(new CountOff().checkCountOff(CountOff.StudentSize+1));
+    }
 }

@@ -1,6 +1,7 @@
 package cn.xpbootcamp.fizzbuzz;
 
 public class CountOff {
+   static int StudentSize=300;
 
    public String checkCountOff(int number){
        String resultStr="";
