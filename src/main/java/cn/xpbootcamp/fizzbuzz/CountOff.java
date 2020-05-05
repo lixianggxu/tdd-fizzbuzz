@@ -5,7 +5,7 @@ public class CountOff {
 
    public String checkCountOff(int number){
        String resultStr="";
-       if(0<number&& number< StudentSize) {
+       if(1<=number&& number<=StudentSize) {
 
            if (number % 3 == 0 && number % 5 == 0 && number % 7 == 0) {
                resultStr = "FizzBuzzWhizz";
@@ -21,6 +21,8 @@ public class CountOff {
                resultStr = "Buzz";
            } else if (number % 7 == 0) {
                resultStr = "Whizz";
+           }else{
+               resultStr=number+"";
            }
        }else{
            resultStr="ExptionNumber";
