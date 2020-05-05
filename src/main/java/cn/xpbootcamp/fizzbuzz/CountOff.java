@@ -8,6 +8,8 @@ public class CountOff {
            resultStr="FizzBuzz";
        }else if(number%3==0&&number%7==0){
            resultStr="FizzWhizz";
+       }else if(number%5==0&&number%7==0){
+           resultStr="BuzzWhizz";
        }else if(number%3==0){
            resultStr="Fizz";
        }else if(number%5==0){
