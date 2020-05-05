@@ -6,6 +6,8 @@ public class CountOff {
        String resultStr="";
        if(number%3==0){
            resultStr="Fizz";
+       }else if(number%5==0){
+           resultStr="Buzz";
        }
        return resultStr;
 
