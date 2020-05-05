@@ -5,20 +5,25 @@ public class CountOff {
 
    public String checkCountOff(int number){
        String resultStr="";
-       if(number%3==0&&number%5==0&&number%7==0){
-           resultStr="FizzBuzzWhizz";
-       }else if(number%3==0&&number%5==0){
-           resultStr="FizzBuzz";
-       }else if(number%3==0&&number%7==0){
-           resultStr="FizzWhizz";
-       }else if(number%5==0&&number%7==0){
-           resultStr="BuzzWhizz";
-       }else if(number%3==0){
-           resultStr="Fizz";
-       }else if(number%5==0){
-           resultStr="Buzz";
-       }else if(number%7==0){
-           resultStr="Whizz";
+       if(0<number&& number< StudentSize) {
+
+           if (number % 3 == 0 && number % 5 == 0 && number % 7 == 0) {
+               resultStr = "FizzBuzzWhizz";
+           } else if (number % 3 == 0 && number % 5 == 0) {
+               resultStr = "FizzBuzz";
+           } else if (number % 3 == 0 && number % 7 == 0) {
+               resultStr = "FizzWhizz";
+           } else if (number % 5 == 0 && number % 7 == 0) {
+               resultStr = "BuzzWhizz";
+           } else if (number % 3 == 0) {
+               resultStr = "Fizz";
+           } else if (number % 5 == 0) {
+               resultStr = "Buzz";
+           } else if (number % 7 == 0) {
+               resultStr = "Whizz";
+           }
+       }else{
+           resultStr="ExptionNumber";
        }
 
        return resultStr;
