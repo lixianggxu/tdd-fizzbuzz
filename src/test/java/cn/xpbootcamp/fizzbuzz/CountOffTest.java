@@ -20,5 +20,8 @@ public class CountOffTest {
         assertThat("Whizz").isEqualTo(new CountOff().checkCountOff(7));
     }
 
-
+    @Test
+    public void should_say_nothing_for_multiple_of_3_and_5(){
+        assertThat("FizzBuzz").isEqualTo(new CountOff().checkCountOff(15));
+    }
 }
